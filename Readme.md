@@ -13,7 +13,7 @@ The Employee Management System is a web-based application built with Django. It 
 1. Clone the repository:
 
 ```
-git clone https://github.com/tanujgupta18/employee-management-system.git
+git clone https://github.com/tanujgupta18/Employee-Management-System.git
 ```
 
 2. Run the development server:
