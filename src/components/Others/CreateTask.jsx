@@ -8,7 +8,7 @@ const CreateTask = () => {
           <div>
             <h3 className="text-sm text-gray-300 mb-0.5">Task Title</h3>
             <input
-              className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
+              className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border border-gray-400 mb-4"
               type="text"
               placeholder="Make a UI design"
             />
@@ -17,14 +17,14 @@ const CreateTask = () => {
             <h3 className="text-sm text-gray-300 mb-0.5">Date</h3>
             <input
               type="date"
-              className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
+              className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border border-gray-400 mb-4"
             />
           </div>
           <div>
             <h3 className="text-sm text-gray-300 mb-0.5">Assign to</h3>
             <input
               type="text"
-              className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
+              className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border border-gray-400 mb-4"
               placeholder="Employee Name"
             />
           </div>
@@ -32,7 +32,7 @@ const CreateTask = () => {
             <h3 className="text-sm text-gray-300 mb-0.5">Category</h3>
             <input
               type="text"
-              className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
+              className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border border-gray-400 mb-4"
               placeholder="design, dev, etc."
             />
           </div>
@@ -41,7 +41,7 @@ const CreateTask = () => {
         <div className="w-2/5 flex flex-col items-start">
           <h3 className="text-sm text-gray-300 mb-0.5">Description</h3>
           <textarea
-            className="w-full h-44 text-sm py-2 px-4 rounded outline-none bg-transparent border-[1px] border-gray-400"
+            className="w-full h-44 text-sm py-2 px-4 rounded outline-none bg-transparent border border-gray-400"
             name=""
             id=""
           ></textarea>
