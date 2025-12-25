@@ -12,36 +12,37 @@ const Login = ({ handleLogin }) => {
   };
 
   return (
-    <div className="h-screen w-screen flex items-center justify-center">
-      <div className="border-2 border-emerald-600 p-20 rounded-xl">
-        <form
-          onSubmit={(e) => {
-            submitHandler(e);
-          }}
-          className="flex flex-col justify-center items-center"
-        >
+    <div className="h-screen w-screen flex items-center justify-center bg-linear-to-br from-[#0f2027] via-[#203a43] to-[#2c5364]">
+      <div className="backdrop-blur-md bg-white/10 border border-white/20 p-12 rounded-2xl shadow-xl w-[420px]">
+        <h2 className="text-3xl font-bold text-white text-center mb-2">
+          Welcome Back 👋
+        </h2>
+        <p className="text-gray-300 text-center mb-8">Login to continue</p>
+
+        <form onSubmit={submitHandler} className="flex flex-col gap-4">
           <input
             value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
+            onChange={(e) => setEmail(e.target.value)}
             required
-            className="outline-none bg-transparent border-2 border-emerald-600 font-medium text-lg py-2 px-6 rounded-full placeholder:text-gray-400"
             type="email"
-            placeholder="Enter your email"
+            placeholder="Email address"
+            className="w-full bg-transparent border border-emerald-500 text-white placeholder-gray-400 px-5 py-3 rounded-full outline-none focus:ring-2 focus:ring-emerald-500 transition"
           />
+
           <input
             value={password}
-            onChange={(e) => {
-              setPassword(e.target.value);
-            }}
+            onChange={(e) => setPassword(e.target.value)}
             required
-            className="outline-none bg-transparent border-2 border-emerald-600 font-medium text-lg py-2 px-6 rounded-full mt-3 placeholder:text-gray-400"
             type="password"
-            placeholder="Enter password"
+            placeholder="Password"
+            className="w-full bg-transparent border border-emerald-500 text-white placeholder-gray-400 px-5 py-3 rounded-full outline-none focus:ring-2 focus:ring-emerald-500 transition"
           />
-          <button className="mt-7 text-white border-none outline-none hover:bg-emerald-700 font-semibold bg-emerald-600 text-lg py-2 px-8 w-full rounded-full placeholder:text-white cursor-pointer">
-            Log in
+
+          <button
+            type="submit"
+            className="mt-4 bg-emerald-600 hover:bg-emerald-700 transition text-white font-semibold py-3 rounded-full"
+          >
+            Log In
           </button>
         </form>
       </div>
